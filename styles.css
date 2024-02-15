@@ -1,0 +1,402 @@
+/* estilização padrão da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    overflow:auto;
+}
+/* estilização do corpo da página */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+/* todas as cores possíveis que podem ser utilizadas na página */
+:root {
+    --pink: #ee0d64f5;
+    --white: #ffffff;
+    --marrom: #5e2e2e;
+    --black: #000000;
+    --degrade-btn: linear-gradient(#f9b1dc, #ee0d64f5);
+}
+/* background do plano de fundo da página */
+.bg-white {
+    background-color: var(--pink);
+}
+/* tamanho do primeiro container */
+.container {
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+
+}
+section, footer{
+    padding: 2.7rem 0;
+}
+
+
+/* estilização do botão saber mais */
+.btn-gradient{
+    padding: 10px 25px;
+    color:#000000;
+    border-color: white;
+    cursor:pointer;
+    background-image: var(--degrade-btn);
+
+}
+/* estilização das categorias que foram definidas */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px 0px;
+}
+/* estilização da logo */
+.logo a{
+    font-size: 20px;
+    font-weight: bold;
+    color:#f3c1d9;
+}
+/* estilização da imagem da logo */
+.logo a img{
+    width: 70px;
+    border-radius: 50%;
+    padding: 20px 0px;
+}
+/* estilização da lista ordenada */
+.ul{
+    display: flex;
+    align-items: center;
+  
+}
+/* esilização das listas */
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;
+}
+/* estilização das palavras */
+.ul li a{
+    color: #ffffff;
+}
+/* estiização menu */
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+/* estilização do texto do menu */
+.main-text{
+    width: 50%;
+    color:#ffffff;
+
+}
+/* estilização do título do menu */
+.main-text h1{
+    font-size: 4.5rem;
+
+}
+/* estilização do subtítulo do menu */
+.main-text h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 4%;
+    
+} 
+/* estilização das divs do menu */
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+/* ajustando tamanho da imagem */
+.main-img{
+    width: 35%;
+    border-radius: 10px;
+}
+/* ajuste da imagem da imagem */
+.main-img img{
+    width: 100%;
+}
+/* estilização do icone do menu */
+.menu-icon{
+    display:none;
+    position: relative;
+    z-index: 10;
+}
+/*resultados*/
+.resultados{
+    background: #ffffff;
+}
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resultados .resultados-text{
+    color: var(--pink);
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+.resultados .resultados-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink);
+}
+.resultados .resultados-numero p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+.resultados .resultados-numero p span{
+font-size: 30px;
+font-weight: 600;
+}
+
+/*section diferenciais */
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+
+}
+.diferenciais .card{
+    color: white;
+    width: 30%;
+    background-color: var(--pink);
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.diferenciais .card:hover{
+    background-color: palevioletred;
+    box-shadow: 0px 10px 67px 8px palevioletred;;
+}
+.diferenciais .card img{
+    width: 60px;
+
+}
+.diferenciais .card .título{
+    margin: 13px 0;
+    font-weight: 600;
+    margin-top: 10px;
+    
+}
+
+/*section chocolate*/
+.chocolate .container{
+    display: flex;
+    align-items: center;
+    background-color: var(--pink);
+    margin-top: 4px;
+    border-radius: 10px;
+}
+.chocolate .chocolate-img{
+    width: 50%;
+    padding: 15px;
+    margin: 9px;
+}
+.chocolate .chocolate-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.chocolate .chocolate-text{
+    width: 50%;
+    padding-left: 90px;
+}
+
+.chocolate .chocolate-text h2{
+    font-size: 2.5rem;
+    color: white;
+}
+.chocolate .chocolate-text p{
+    margin: 20px 0;
+    color:#f5c9de;
+}
+.chocolate .chocolate-text p b{
+    color: white;
+    font-size: 25px;
+}
+
+/*contatos */
+.contatos h2{
+    font-size: 2.5rem;
+    color:rgb(216, 62, 114);
+}
+.contatos .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.contatos .cards .card-item{
+    width: 30%;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 20px;
+    background-color: rgb(216, 62, 114);
+    box-shadow:0px 35px 97px -15px rgb(255, 192, 238);
+}
+.contatos .cards img{
+    width: 80px;
+}
+.contatos .cards .email-titulo,
+.instagram-titulo, .whatsapp-titulo {
+    margin: 5px 0;
+    color:pink;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.contatos .cards .email-id,
+.instagram-id, .whatsapp-id{
+    color: white;
+    padding: 4px;
+    margin-bottom: 20px;
+    
+}
+.contatos .cards button{
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--pink, white);
+    border-color: white;
+
+}
+/*section newsletter */
+.newsletter{
+    background-color:white;
+}
+.newsletter .box-newsletter{
+    text-align: center;
+    padding: 100px;
+    background-image: url('./imagens/bg-cupcake.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.newsletter .box-newsletter h2{
+    font-size: 2.5rem;
+}
+.newsletter .box-newsletter p{
+    margin: 13px 0;
+}
+.newsletter .box-newsletter input{
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #000000;
+    background-color: #f3c1d9;
+}
+.newsletter .box-newsletter button{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    background-color: var(--pink);
+    cursor: pointer;
+}
+
+/* responsivo (clicar na seta ao lado do número 122 para ver as estilizações */
+@media (max-width:960px){
+    .menu-icon{
+        display:block;
+    }
+    .ul{
+        position: fixed;
+        background:#ee0d64f5;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0, 3s;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ul li{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .ul.ativo{
+        left: 0;
+    }
+    main .container{
+        flex-direction: column;
+
+    }
+    main .container .main-img,
+    main .container .main-text{
+        width: 100%;
+        text-align: center;
+    }
+    main .container .main-text div{
+        justify-content: center;
+    }
+    .resultados .container{
+        flex-direction: column;
+    }
+    .resultados .resultados-text, 
+    .resultados .resultados-numero{
+
+        width: 100%;
+        text-align: center;
+    }
+    .resultados .resultados-numero{
+    margin-top:30px;
+    }
+    .diferenciais .container{
+        flex-direction: column;
+    }
+    .diferenciais .card{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .chocolate .container{
+        flex-direction: column-reverse;
+    }
+    .chocolate .chocolate-text, 
+    .chocolate .chocolate-img{
+        width: 100%;
+        text-align: center;
+    }
+    .contatos .cards{
+        flex-direction: column;
+    }
+    .contato .cards .card-item{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .newsletter .box-newsletter {
+        padding: 50px;
+    }
+    .newsletter .box-newsletter h2{
+        font-size: 2rem;
+    }
+    .newsletter .box-newsletter input{
+        width: 90%;
+    }
+
+    .newsletter .box-newsletter button{
+        width: 50%;
+        margin-top: 20px;
+
+    }
+}
+
+@media(max-width: 440px){
+    .resultados .resultados-numero{
+        flex-direction: column;
+    }
+    main .container .main-text h1{
+        font-size: 3rem;
+    }
+}
+
+
+
